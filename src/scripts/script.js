@@ -16,3 +16,25 @@ ScrollReveal().reveal(".header__container .btn", {
     ...ScrollReveal10ption,
     delay: 1000, 
 });
+
+// About container
+ScrollReveal().reveal(".about__content .section__header", ScrollReveal10ption);
+
+ScrollReveal().reveal(".about__content .section__subheader", {
+    ...ScrollReveal10ption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".about__image", {
+    ...ScrollReveal10ption,
+    delay: 500, 
+});
+
+ScrollReveal().reveal(".about__content .about__flex", {
+    ...ScrollReveal10ption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".about__content .btn", {
+    ...ScrollReveal10ption,
+    delay: 1300,
+});

@@ -96,38 +96,50 @@ nav {
     padding: 0.75rem 1.5rem;
     outline: none;
 }
-/* 
-  
-  .section__header {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-    font-weight: 800;
-    font-family: var(--header-font);
-    text-align: center;
-  }
-  
-  .section__subheader {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .btn {
-    padding: 0.75rem 1.5rem;
-    outline: none;
-    
-    font-size: 1rem;
-    color: var(--primary-color);
-    
-    
-  }
-  img {
-    width: 100%;
-    display: flex;
-  }
-  
+/* Section About */
+.about_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+.about_container :is(.section__header, .section__subheader) {
+  text-align:left;  
+}
+.about__flex {
+  margin: 2rem 0;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: var(--primary-color-light);
+}
+.about__card {
+  flex: 1 1 150px;
+  text-align: center;
+  border-right: 2px solid var(--extra-light);
+}
+.about__card:last-child {
+  border: none;
+}
+.about__card h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--header-font);
+  font-weight: 600;
+}
+.about__card p {
+  font-size: .9rem;
+}
+.about__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
  
-  
+   
 
   
   
@@ -137,24 +149,3 @@ nav {
   
   
   
-  .link a:hover {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-  }
-  
-  .link span {
-    padding: 1rem 0;
-    color: var(--white);
-    cursor: pointer;
-  } */
-  
-  /* .header__container {
-    padding: 12rem 1rem;
-  }
-  
-  .header__container h1 {
-    margin-bottom: 1rem;
-    max-width: 700px;
-    font-size: 4rem;
-    font-family: var(--header-font);
-  } */
