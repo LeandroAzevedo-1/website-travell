@@ -14,7 +14,7 @@ body {
 }
 header {
     background-image: linear-gradient(to top, var(--primary-color), transparent),
-      url("/assets/header.jpg");
+      url("../../assets/header.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
