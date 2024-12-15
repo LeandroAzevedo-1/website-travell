@@ -22,19 +22,19 @@ ScrollReveal().reveal(".about__content .section__header", ScrollReveal10ption);
 
 ScrollReveal().reveal(".about__content .section__subheader", {
     ...ScrollReveal10ption,
-    delay: 500,
+    delay: 300,
 });
 
 ScrollReveal().reveal(".about__image", {
     ...ScrollReveal10ption,
-    delay: 500, 
+    delay: 300, 
 });
 
 ScrollReveal().reveal(".about__content .about__flex", {
     ...ScrollReveal10ption,
-    delay: 1000,
+    delay: 700,
 });
 ScrollReveal().reveal(".about__content .btn", {
     ...ScrollReveal10ption,
-    delay: 1300,
+    delay: 900,
 });
