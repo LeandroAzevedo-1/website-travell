@@ -102,6 +102,7 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   align-items: center;
+  height: 100vh;
 }
 .about_container :is(.section__header, .section__subheader) {
   text-align:left;  
@@ -118,7 +119,7 @@ nav {
 .about__card {
   flex: 1 1 150px;
   text-align: center;
-  border-right: 2px solid var(--extra-light);
+  border-right: 2px solid var(--primary-color);
 }
 .about__card:last-child {
   border: none;
@@ -137,8 +138,74 @@ nav {
   height: auto;
   border-radius: 5px;
 }
-
- 
+/*Section Discover */
+.discover {
+  background-image: linear-gradient(to bottom, rgba(225,255,255,0.05)), transparent;
+  height: 100vh;
+}
+.discover__container .section__header{  
+  text-align: center;
+  font-family: var(--header-font);
+  font-size: 3rem;
+  margin: -5rem 0 1.3rem 0;
+}
+.discover__container .section__subheader{  
+  text-align: center;
+  font-family: var(--header-font);
+  margin-bottom: 2.1rem;
+}
+.discover__grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.discover__card {
+  max-width: 320px;
+  height: 400px; 
+  margin: auto;
+}
+.discover__card:nth-child(2) {  
+  transform: translateY(5rem);
+}
+.discover__image {
+  position: relative;
+}
+.discover__image img {
+  width: 100%;
+  height: 370px; 
+}
+.discover__image::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, var(--primary-color), transparent);
+}
+.discover__card__content {
+  padding: 0.8rem 2rem;
+}
+.discover__card__content h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  color: var(--secondary-color);
+}
+.discover__card__content p {
+  margin-bottom: 2rem;
+}
+.discover__btn {
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+  cursor: pointer;
+}
    
 
   
