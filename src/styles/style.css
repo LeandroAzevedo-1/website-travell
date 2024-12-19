@@ -96,7 +96,7 @@ nav {
     padding: 0.75rem 1.5rem;
     outline: none;
 }
-/* Section About */
+
 .about_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -138,12 +138,12 @@ nav {
   height: auto;
   border-radius: 5px;
 }
-/*Section Discover */
+
 .discover {
   background-image: linear-gradient(to bottom, rgba(225,255,255,0.05)), transparent;
   height: 100vh;
 }
-/* Stiles section discover e blog */
+
 .section__header{  
   text-align: center;
   font-family: var(--header-font);
@@ -207,7 +207,7 @@ nav {
   border: 1px solid var(--white);
   cursor: pointer;
 }
-/* Blogs */
+
 .blogs__container {
   margin-top: 12.5rem;
 }
@@ -246,7 +246,7 @@ nav {
   font-weight: 500;
   z-index: 1;
 }
-/* >>> Journals <<<< */
+
 .journals__grid {
   margin-top: 6rem;
   display: grid;
@@ -302,11 +302,142 @@ nav {
   text-align: center;
 }
 
-  
-  
- 
-  
- 
-  
-  
-  
+.hero__container p {
+  text-align: center;
+  font-size: 12rem;
+  font-weight: 700;
+  background-image: url("../../assets/banner.jpg") ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--extra-light);
+}
+
+.gallery__container {
+  padding: 5rem 1rem;
+}
+.gallery__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.gallery__card {
+  position: relative;
+  overflow: hidden;
+}
+.gallery__card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.gallery__content {
+  position: absolute;
+  left: 50%;
+  bottom: -8rem;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 2rem 1rem;
+  transition: .3s;
+  text-align: center;
+  background-image: linear-gradient(to top, var(--primary-color), transparent);
+}
+.gallery__content h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+}
+.gallery__card:hover .gallery__content {
+  bottom: 0;
+}
+
+.contact {
+  background-image: linear-gradient( to top,rgba(0, 0, 0, 0.5), transparent );
+}
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+.contact__card {
+  max-width: 250px;
+  margin: auto;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border: 1px solid var(--extra-light);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.contact__card span {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.contact__card:hover span {
+  color: var(--secondary-color);
+}
+.contact__col h4 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+}
+.contact__col h5 {
+  margin-bottom:  .5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+}
+
+.footer__container {
+  text-align: center;
+}
+.footer__container h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer_socials {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer_socials span a {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer_socials span a:hover {
+  color: var(--secondary-color);
+}
+.footer__container p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer__link a {
+  font-weight: 500;
+  color: var(--white);
+}
+.footer__link a:hover {
+  color: var(--secondary-color);
+}
+.footer__bar {
+  padding: 1rem;
+  text-align: center;
+  font-size: .8rem;
+  border-top: 1px solid var(--extra-light);
+}
